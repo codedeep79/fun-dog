@@ -1,0 +1,269 @@
+body {
+	background: #4285F4;
+  }
+  
+  .container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: white;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	overflow: hidden;
+	border: #383838 solid 10px;
+	z-index: 1;
+  }
+  .container .body {
+	width: 190px;
+	height: 300px;
+	background-color: #B88968;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 190px;
+	border: solid #383838 10px;
+  }
+  .container .left-eye {
+	width: 70px;
+	height: 70px;
+	background-color: #383838;
+	border-radius: 100%;
+	top: 100px;
+	left: 65px;
+	position: absolute;
+	animation: wink 2s ease-in-out forwards;
+	animation-iteration-count: infinite;
+  }
+  .container .left-eye::after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: #fff;
+	top: 11px;
+	left: 13px;
+	border-radius: 100%;
+  }
+  .container .right-eye {
+	width: 70px;
+	height: 70px;
+	background-color: #383838;
+	border-radius: 100%;
+	top: 100px;
+	right: 65px;
+	position: absolute;
+	animation: wink 2s ease-in-out forwards;
+	animation-iteration-count: infinite;
+  }
+  .container .right-eye::after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: #fff;
+	top: 11px;
+	right: 13px;
+	border-radius: 100%;
+  }
+  .container .nose {
+	width: 45px;
+	height: 35px;
+	background-color: #383838;
+	border-radius: 100%;
+	top: 160px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	z-index: 5;
+  }
+  .container .mouth-part1 {
+	position: absolute;
+	top: 135px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 65px;
+	width: 90px;
+	background-color: #B88968;
+	border-radius: 90px 90px 0 0;
+	border: #383838 solid 10px;
+	border-bottom: 0;
+  }
+  .container .mouth-part1::after {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	height: 30px;
+	width: 40px;
+	border-radius: 90px 90px 0 0;
+	border: #383838 solid 10px;
+	border-bottom: 0;
+  }
+  .container .mouth-part2 {
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	background-color: #B88968;
+	border-radius: 0 0 100% 100%;
+	border: #383838 solid 10px;
+	border-top: 0px;
+	top: 200px;
+	left: 95px;
+  }
+  .container .mouth-part2::after {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	background-color: #B88968;
+	border-radius: 0 0 100% 100%;
+	border: #383838 solid 10px;
+	border-top: 0px;
+	top: 0px;
+	left: 65px;
+  }
+  .container .mouth {
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	border-radius: 0 0 100% 100%;
+	border-bottom: #383838 solid 10px;
+	top: 180px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+  }
+  .container .left-ear {
+	width: 30px;
+	height: 80px;
+	background-color: #B88968;
+	position: absolute;
+	top: 90px;
+	left: 30px;
+	margin: auto;
+	border-radius: 190px;
+	border: solid #383838 10px;
+	transform: rotate(10deg);
+	z-index: -1;
+  }
+  .container .right-ear {
+	width: 30px;
+	height: 80px;
+	background-color: #B88968;
+	position: absolute;
+	top: 90px;
+	right: 30px;
+	margin: auto;
+	border-radius: 190px;
+	border: solid #383838 10px;
+	transform: rotate(-10deg);
+	z-index: -1;
+  }
+  .container .left-hand {
+	width: 15px;
+	height: 120px;
+	background-color: #B88968;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	margin: auto;
+	border-radius: 190px;
+	border: solid #383838 8px;
+	transform: rotate(10deg);
+	background-image: linear-gradient(to bottom, transparent 15%, #B88968 15%), linear-gradient(to right, transparent 20%, #383838 20%, #383838 40%, transparent 40%, transparent 60%, #383838 60%, #383838 80%, transparent 80%);
+  }
+  .container .right-hand {
+	width: 15px;
+	height: 120px;
+	background-color: #B88968;
+	position: absolute;
+	top: 200px;
+	right: 100px;
+	margin: auto;
+	border-radius: 190px;
+	border: solid #383838 8px;
+	transform: rotate(-10deg);
+	background-image: linear-gradient(to bottom, transparent 15%, #B88968 15%), linear-gradient(to right, transparent 20%, #383838 20%, #383838 40%, transparent 40%, transparent 60%, #383838 60%, #383838 80%, transparent 80%);
+  }
+  .container .face {
+	position: relative;
+	top: 0px;
+	animation: move-face 2s ease-in-out forwards;
+	animation-iteration-count: infinite;
+  }
+  .container .hands {
+	position: relative;
+	top: 300px;
+	animation: move 2s ease-in-out forwards;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes move {
+	0% {
+	  top: 300px;
+	}
+	20% {
+	  top: 300px;
+	}
+	60% {
+	  top: 0;
+	}
+	90% {
+	  top: 0;
+	}
+	100% {
+	  top: 300px;
+	}
+  }
+  @keyframes move-face {
+	0% {
+	  top: 0;
+	}
+	60% {
+	  top: 0;
+	}
+	65% {
+	  top: 4px;
+	}
+	70% {
+	  top: 0;
+	}
+	75% {
+	  top: 4px;
+	}
+	80% {
+	  top: 0;
+	}
+	85% {
+	  top: 4px;
+	}
+	90% {
+	  top: 0;
+	}
+  }
+  @keyframes wink {
+	0% {
+	  transform: scale(1, 1);
+	}
+	60% {
+	  transform: scale(1, 1);
+	}
+	65% {
+	  transform: scale(1, 0.8);
+	}
+	85% {
+	  transform: scale(1, 0.8);
+	}
+	100% {
+	  transform: scale(1, 1);
+	}
+  }
